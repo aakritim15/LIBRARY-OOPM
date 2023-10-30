@@ -9,7 +9,6 @@ public class Book {
     public String ISBN;
     public int quantity;
 
-    // construct
     Book(String title, String author, String publication, String ISBN, int quantity) {
         this.title = title;
         this.author = author;
@@ -21,5 +20,4 @@ public class Book {
     public void getBookDetails() {
         System.out.print(title + "\t" + author + "\t" + publication + "\t\t" + ISBN + "\t" + quantity + "\t");
     }
-
 }

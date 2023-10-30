@@ -20,7 +20,7 @@ public class BookDatabase {
     }
 
     public static void displayDatabase() {
-        System.out.println("Title\tAuthor\tPublication\tISBN\t\tQuantity");
+        System.out.println("Title\tAuthor\tPublication\tISBN\tQuantity");
         for (int i = 0; i < all_books.size(); i++) {
             all_books.get(i).getBookDetails();
             System.out.println();

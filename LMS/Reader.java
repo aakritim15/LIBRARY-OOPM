@@ -44,7 +44,6 @@ public class Reader extends Library {
                     break;
                 case 5:
                     System.out.flush();
-                    // main(null);
                     break;
                 case 6:
                     flag = false;

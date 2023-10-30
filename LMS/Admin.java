@@ -5,7 +5,7 @@ import java.util.*;
 public class Admin extends Library {
     public static String admin_name;
     public static String admin_ID;
-    public static BookDatabase db = new BookDatabase(); // obj
+    public static BookDatabase db = new BookDatabase();
 
     Admin(String admin_name1, String admin_ID1) {
         admin_name = admin_name1;
@@ -13,15 +13,14 @@ public class Admin extends Library {
     }
 
     public static void choice() {
-        System.out.print("\033[H\033[2J");
         System.out.flush();
-        // System.out.flush();
         System.out.println("Welcome Admin!");
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
         while (flag) {
             System.out.println(
                     "\n1. Add book to database.\n2. Delete book from database.\n3. Display Database\n4. Logout\n5. Exit");
+            System.out.println("Enter your choice:");
             int ch = sc.nextInt();
             switch (ch) {
                 case 1:
@@ -34,9 +33,8 @@ public class Admin extends Library {
                     BookDatabase.displayDatabase();
                     break;
                 case 4:
-                    System.out.print("\033[H\033[2J");
-                    System.out.flush(); // clear space/screen
-                    main(null);// logout opt to again login
+                    System.out.flush();
+                    main(null);
                     break;
                 case 5:
                     flag = false;

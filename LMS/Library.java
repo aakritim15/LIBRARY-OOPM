@@ -7,9 +7,6 @@ public class Library {
     public static Vector<String> usernames = new Vector<String>();
     public static Vector<String> passwords = new Vector<String>();
 
-    // public String getUserType() {
-    // return userType;
-    // }
     public static void register(String user_name, String user_password) {
         usernames.addElement(user_name);
         passwords.addElement(user_password);
@@ -36,7 +33,7 @@ public class Library {
         usernames.add("AAKRITI");
         passwords.add("AAKRITI");
         Scanner sc = new Scanner(System.in);
-        System.out.println("***LIBRARY***");
+        System.out.println("LIBRARY:");
         boolean flag = true;
         while (flag) {
             System.out.println("1. Existing User? ---> Login.\n2. New User? --->  Register\n3. Exit");
@@ -77,10 +74,7 @@ public class Library {
                     System.exit(0);
                 default:
                     System.out.println("Invalid option selected.");
-
             }
-
         }
-
     }
 }
